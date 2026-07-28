@@ -1,0 +1,23 @@
+name: Validate organization profile
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Compile Python
+        run: python3 -m compileall -q scripts tests
+      - name: Run stdlib tests
+        run: python3 -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Run profile validator
+        run: python3 scripts/validate_profile.py --offline
