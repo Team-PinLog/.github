@@ -1,6 +1,5 @@
-![Uploading 화면 기록 2026-08-10 오전 10.49.54.gif…]()
-
 # PinLog
+<img width="1904" height="918" alt="화면 기록 2026-08-10 오전 10 49 54" src="https://github.com/user-attachments/assets/24c74d09-09c6-417f-8fd8-91cdde41e7f7" />
 
 장소를 저장한 맥락까지 기록해, 이름이 떠오르지 않아도 다시 찾고 새로운 장소를 발견하도록 돕는 서비스입니다.
 
